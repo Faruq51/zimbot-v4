@@ -40,9 +40,9 @@ global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 const { say } =  require('cfonts')
 const { color } = require('./lib/color')
-say('ZIM-BOT\nV4', {
+say('Zenz-BOT', {
     font: '3d',
-    colors: ["#0ff",'green',"#ff0"],
+    colors: ["#0ff",'green',"#ff90"],
     align: 'center',
     gradient: false,
     background: "transparent",
@@ -52,29 +52,29 @@ say('ZIM-BOT\nV4', {
     maxLenght: '0'
 
   })
-  say(`ZIM-BOT-INC By @${author.name || author}`, {
+  say(`Zenz-Bot By @${author.name || author}`, {
     font: 'console',
     align: 'center',
     gradient: ['red', 'green']
   })
 Drips.hr();
 console.log(color(''), color('THANKS FOR CHOOSING ZIM BOT', 'green'))
-console.log(color(''), color('SCRIPT BY DRIPS', 'red'))
-console.log(color( ''), color('https://wa.me/27634090203','cyan'))
+console.log(color(''), color('SCRIPT BY FARUQ-OFC', 'red'))
+console.log(color( ''), color('https://wa.me/6285807264974','cyan'))
 Drips.hr();
-Drips.banner(`DRIPS ZIM BOT OWNER`)
-Drips.ok('WELCOME TO ZIMBOT')
+Drips.banner(`FARUQ-OFC OWNER`)
+Drips.ok('WELCOME TO Zenz-Bot')
 Drips.done('I WROTE THIS SCRIPT BY MYSELF')
 Drips.info('YOU WANNA CONTRUBUTE FEEL FREE TO CONTACT ME, BEING FRIENDLY IS MY LANGUAGE')
 Drips.error('')
-Drips.time('')
+Drips.time('') 
 Drips.hr();
 
 async function startZimBotInc() {
     const ZimBotInc = ZimBotIncConnect({
         logger: pino({ level: 'silent' }),
-        printQRInTerminal: true,
-        browser: ['SUB DRIPS OFC','Ubuntu','20.0.04'],
+        printQRInTerminal: true, 
+        browser: ['SUB FARUQ OFC','Ubuntu','20.0.04'],
         auth: state,
         
     })
@@ -155,13 +155,13 @@ footer: `©ZIM BOT INC 2022`,
 buttons: buttons,
 headerType: 4,
 contextInfo: { externalAdReply:{
-title:"ZIM BOT V4",
-body:"SUB DRIPS OFC",
+title:"Zenz-Bot",
+body:"FARUQ OFC",
 showAdAttribution: true,
 mediaType:2,
 thumbnail:wangu,
-mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
+mediaUrl:`https://youtu.be/jdiw727js`, 
+sourceUrl: `https://youtu.be/kdjeu27`,
 }}
 }
 const driphunny = fs.readFileSync('./Zimbot/welcome.mp3')
@@ -184,17 +184,17 @@ mentions: [num],
 fileName: `HE/SHE IS GONE BRO ${metadata.subject}`,
 fileLength: 99999999999999,
 caption: he,
-footer: `©ZIM BOT INC 2022`,
+footer: `©Zenz-Bot by FARUQ-OFC`,
 buttons: buttons,
 headerType: 4,
 contextInfo: { externalAdReply:{
-title:"ZIM BOT V4",
-body:"SUB DRIPS OFC",
+title:"Zenz-Bot",
+body:"FARUQ OFC",
 showAdAttribution: true,
 mediaType:2,
 thumbnail: mhatadzenyu,
-mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
+mediaUrl:`https://youtu.be/kisieubd`, 
+sourceUrl: `https://youtu.be/KNu-gjsjeh`,
 }}
 }
 const dripbabe = fs.readFileSync('./Zimbot/leave.mp3')
@@ -281,7 +281,7 @@ scheduleGc();
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await ZimBotInc.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nFN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:GitHub: zim-bot\nitem2.X-ABLabel:Follow Me On Github\nitem3.URL:YouTube: Drips\nitem3.X-ABLabel:Youtube\nitem4.ADR:;;Zim, Mizoram;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nFN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:GitHub: FARUQ-OFC\nitem2.X-ABLabel:Follow Me On Github\nitem3.URL:YouTube: Drips\nitem3.X-ABLabel:Youtube\nitem4.ADR:;;Zim, Mizoram;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	ZimBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
